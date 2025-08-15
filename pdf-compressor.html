@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PDF Compressor - ProToolkit</title>
+  <meta name="description" content="Compress PDF files online to reduce file size. Fast, secure, free, and easy.">
+  <meta name="keywords" content="PDF compressor, compress PDF, reduce PDF size, online tool, dark mode, iOS UI">
+  <link rel="icon" href="../favicon.ico">
+  <script data-ad-client="ca-pub-XXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <style>
+    :root {
+      --primary-bg: #101828;
+      --secondary-bg: #202a40;
+      --accent: #2e72e9;
+      --accent-dark: #173a6c;
+      --box-bg: #1b2332;
+      --text-main: #e4eaf3;
+      --text-faint: #a0a7bf;
+      --shadow: 0 6px 28px #061122aa;
+      --radius: 22px;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0d1321 0%, #2e72e9 100%);
+      color: var(--text-main);
+      font-family: 'SF Pro Display', 'Segoe UI', 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: var(--box-bg);
+      margin: 2vw auto 2vw auto;
+      padding: 1.3rem 1rem 1.1rem 1rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      max-width: 540px;
+      position: relative;
+    }
+    .home-link {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 15px;
+      padding: .48em 1em;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 2px 12px #2e72e944;
+      transition: background .15s;
+      letter-spacing: .02em;
+    }
+    .home-link:hover { background: var(--accent-dark);}
+    header h1 {
+      font-size: 2rem;
+      margin: 0 0 .3em 0;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      color: var(--text-faint);
+      font-size: 1.09rem;
+      margin: 0;
+      letter-spacing: .012em;
+    }
+    .ad-container {
+      margin: 2vw auto 2vw auto;
+      max-width: 540px;
+      background: var(--secondary-bg);
+      border-radius: var(--radius);
+      text-align: center;
+      min-height: 55px;
+      padding: .7rem .1rem;
+      box-shadow: var(--shadow);
+    }
+    main {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1.5em;
+    }
+    .tool-box {
+      background: var(--box-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 400px;
+      width: 97vw;
+      margin: 2vw auto 1vw auto;
+      padding: 2rem 1.1rem 2rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+    }
+    label {
+      font-size: 1.02rem;
+      color: var(--text-faint);
+      margin-bottom: .18em;
+      margin-left: .1em;
+    }
+    input[type=file], button {
+      border: none;
+      outline: none;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      background: var(--secondary-bg);
+      color: var(--text-main);
+      padding: 0.8rem;
+      margin-bottom: 0;
+      box-shadow: 0 1px 3px #07205644;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      box-shadow: 0 2px 8px #2e72e944;
+      transition: background 0.17s;
+      cursor:pointer;
+    }
+    button:hover { background: var(--accent-dark);}
+    .output-section {
+      margin-top: 1.4rem;
+      text-align: center;
+      border-radius: var(--radius);
+      padding: 1.2rem 0.7rem 1.5rem 0.7rem;
+      background: linear-gradient(103deg, #131f39 70%, #20356c 100%);
+      box-shadow: 0 1px 12px #14305e44;
+      color: var(--text-faint);
+      font-size: 1.07rem;
+    }
+    footer {
+      background: var(--box-bg);
+      min-height: 60px;
+      margin: 2vw auto 2vw auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      padding: 1.07rem 1rem;
+      width: 96vw;
+      max-width: 540px;
+      color: var(--text-faint);
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      header, .ad-container, .tool-box, footer {max-width: 99vw; border-radius: 12px;}
+      .tool-box {padding:1rem .45rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html" class="home-link">&#8592; Home</a>
+    <h1>PDF Compressor</h1>
+    <p>Reduce PDF file size for fast sharing and uploading. Free & secure.</p>
+  </header>
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXX"
+         data-ad-slot="14141414"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <main>
+    <section class="tool-box">
+      <form id="pdf-compress-form" autocomplete="off">
+        <label for="pdf-upload">Select PDF to compress:</label>
+        <input type="file" id="pdf-upload" accept=".pdf" required>
+        <button type="submit" id="compress-btn">Compress PDF & Download</button>
+      </form>
+      <div id="output" class="output-section" style="display:none;"></div>
+    </section>
+    <div class="ad-container">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXX"
+           data-ad-slot="15151515"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </main>
+  <footer>
+    © 2025 ProToolkit | Fast, Secure, PDF Compressor.
+  </footer>
+  <script>
+    document.getElementById('pdf-compress-form').onsubmit = function(e) {
+      e.preventDefault();
+      var fileInput = document.getElementById('pdf-upload');
+      var output = document.getElementById('output');
+      output.style.display = 'block';
+      if (!fileInput.files.length) {
+        output.textContent = "Please select a PDF file to compress.";
+        return;
+      }
+      output.innerHTML = `
+        <strong>Demo only:</strong><br>
+        Frontend demo does not actually compress files.<br>
+        To enable full compression, integrate a backend API or JS library (like PDF-lib or service).<br>
+        <br>
+        <span style="color:#2e72e9;font-weight:600;">File selected:</span>
+        <br>${fileInput.files[0].name}
+        <br>
+        <span style="color:#2e72e9;">Action: Compress PDF</span>
+      `;
+    };
+  </script>
+</body>
+</html>
