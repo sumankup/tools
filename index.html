@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ProToolkit - Free Online File Tools</title>
+  <meta name="description" content="ProToolkit: Convert, compress, merge and edit images and PDF files online for free. Modern dark iOS-style UI, fast, secure, and AdSense-ready.">
+  <meta name="keywords" content="image converter, pdf converter, word to pdf, pdf merger, online tools, compress pdf, compress image, dark mode, iOS UI, file utilities">
+  <meta property="og:title" content="ProToolkit | Free Online Converter & Editor Suite">
+  <meta property="og:description" content="One place for all your files: convert, compress, merge images & PDFs. Fast, secure, and beautiful UI.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico">
+  <script data-ad-client="ca-pub-XXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <style>
+    :root {
+      --primary-bg: #101828;
+      --secondary-bg: #202a40;
+      --accent: #2e72e9;
+      --accent-dark: #173a6c;
+      --box-bg: #1b2332;
+      --text-main: #e4eaf3;
+      --text-faint: #a0a7bf;
+      --shadow: 0 6px 28px #061122aa;
+      --radius: 22px;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0d1321 0%, #2e72e9 100%);
+      color: var(--text-main);
+      font-family: 'SF Pro Display', 'Segoe UI', 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: var(--box-bg);
+      margin: 2.5vw auto 2vw auto;
+      padding: 2rem 1rem 1.4rem 1rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      max-width: 720px;
+    }
+    header h1 {
+      font-size: 2.15rem;
+      margin: 0 0 0.45em 0;
+      letter-spacing: -0.02em;
+      color: #e8f0ff;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin: 0;
+      color: var(--text-faint);
+      letter-spacing: .015em;
+    }
+    .ad-container {
+      margin: 2vw auto;
+      max-width: 720px;
+      background: var(--secondary-bg);
+      border-radius: var(--radius);
+      text-align: center;
+      min-height: 68px;
+      padding: .7rem 0;
+      box-shadow: var(--shadow);
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2.2rem;
+      width: 98vw;
+      max-width: 900px;
+      margin: 2vw auto;
+      align-items: stretch;
+    }
+    .tool-card {
+      background: var(--box-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem 1rem 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 220px;
+      margin: 0;
+      text-decoration: none;
+      transition: box-shadow .18s,transform .13s;
+      cursor: pointer;
+      color: var(--text-main);
+      position: relative;
+    }
+    .tool-card:hover {
+      box-shadow: 0 0 0 4px var(--accent);
+      transform: translateY(-2px) scale(1.02);
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .tool-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 auto;
+      width: 100%;
+    }
+    .tool-icon {
+      width: 57px;
+      height: 57px;
+      margin-bottom: 1.07rem;
+      background: var(--secondary-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--accent);
+      box-shadow: 0 2px 12px #2e72e944;
+    }
+    .tool-title {
+      font-size: 1.16rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 0.37em 0;
+      letter-spacing: 0.005em;
+    }
+    .tool-desc {
+      text-align: center;
+      color: var(--text-faint);
+      font-size: .97rem;
+      margin: 0 0 0.51em 0;
+    }
+    .tool-link-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+    }
+    .tool-link {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 17px;
+      padding: .63em 2em;
+      font-weight: 680;
+      text-decoration: none;
+      letter-spacing: 0.015em;
+      box-shadow: 0 2px 8px #2e72e944;
+      font-size: 1.01rem;
+      transition: background .14s;
+      display: inline-block;
+      margin-top: 0.6rem;
+      /* Ensures non-overlap on mobile */
+    }
+    .tool-card:hover .tool-link {
+      background: var(--accent-dark);
+    }
+    footer {
+      background: var(--box-bg);
+      min-height: 60px;
+      margin: 2vw auto 2vw auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      padding: 1.07rem 1rem;
+      width: 96vw;
+      max-width: 720px;
+      color: var(--text-faint);
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      header, .ad-container, footer {max-width: 99vw; border-radius: 12px;}
+      .tools-grid {gap: 1.2rem;}
+      .tool-card {min-height:180px;padding:1.1rem .5rem;}
+    }
+    /* Remove link highlight for the whole card */
+    .tool-card:visited, .tool-card:active {
+      color: var(--text-main);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ProToolkit: Free Online File Tools</h1>
+    <p>Convert, compress, merge images and PDFs instantly. All-in-one toolkit for creators, students, and professionals.</p>
+  </header>
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXX"
+         data-ad-slot="11111111"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <main>
+    <div class="tools-grid">
+      <a class="tool-card" href="/img-convert.html">
+        <div class="tool-content">
+          <div class="tool-icon">🖼️</div>
+          <div class="tool-title">Image Converter & Compressor</div>
+          <div class="tool-desc">Change image formats or compress JPEG, PNG, WebP, GIF easily.</div>
+        </div>
+        <div class="tool-link-wrap">
+          <span class="tool-link">Go to Tool</span>
+        </div>
+      </a>
+      <a class="tool-card" href="pdf-converter.html">
+        <div class="tool-content">
+          <div class="tool-icon">📄</div>
+          <div class="tool-title">PDF Converter</div>
+          <div class="tool-desc">Convert files to and from PDF (Word, PPT, Excel, images, TXT).</div>
+        </div>
+        <div class="tool-link-wrap">
+          <span class="tool-link">Go to Tool</span>
+        </div>
+      </a>
+      <a class="tool-card" href="word-to-pdf.html">
+        <div class="tool-content">
+          <div class="tool-icon">📝</div>
+          <div class="tool-title">Word to PDF Converter</div>
+          <div class="tool-desc">Convert your DOC or DOCX files to PDF with perfect formatting.</div>
+        </div>
+        <div class="tool-link-wrap">
+          <span class="tool-link">Go to Tool</span>
+        </div>
+      </a>
+      <a class="tool-card" href="pdf-merger.html">
+        <div class="tool-content">
+          <div class="tool-icon">🗂️</div>
+          <div class="tool-title">PDF Merger</div>
+          <div class="tool-desc">Merge multiple PDFs into a single document. Easy and ultra-fast.</div>
+        </div>
+        <div class="tool-link-wrap">
+          <span class="tool-link">Go to Tool</span>
+        </div>
+      </a>
+      <a class="tool-card" href="pdf-splitter.html">
+        <div class="tool-content">
+          <div class="tool-icon">✂️</div>
+          <div class="tool-title">PDF Splitter</div>
+          <div class="tool-desc">Split PDFs by pages, ranges, or bookmarks. Simple drag & drop.</div>
+        </div>
+        <div class="tool-link-wrap">
+          <span class="tool-link">Go to Tool</span>
+        </div>
+      </a>
+      <a class="tool-card" href="pdf-compressor.html">
+        <div class="tool-content">
+          <div class="tool-icon">📉</div>
+          <div class="tool-title">PDF Compressor</div>
+          <div class="tool-desc">Reduce PDF file size for faster sharing and uploading.</div>
+        </div>
+        <div class="tool-link-wrap">
+          <span class="tool-link">Go to Tool</span>
+        </div>
+      </a>
+      <!-- Add more tool cards as needed -->
+    </div>
+    <div class="ad-container">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXX"
+           data-ad-slot="22222222"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </main>
+  <footer>
+    © 2025 ProToolkit | Simple. Secure. Powerful. All your file tools in one place.
+  </footer>
+</body>
+</html>
