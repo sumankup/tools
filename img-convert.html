@@ -171,13 +171,13 @@
 </head>
 <body>
   <header>
-    <h1 style="margin:0 0 0.3em 0;font-size:2.1rem;letter-spacing:-0.02em;">Image Compressor & Converter</h1>
+    <h1 style="margin:0 0 0.3em 0;font-size:2.1rem;letter-spacing:-0.02em;">
+      Image Compressor & Converter
+    </h1>
     <p style="color:var(--text-faint);margin:0;font-size:1.08rem;letter-spacing:0.01em;">
-      Compress and convert images (JPEG, PNG, WebP) in one click.<br>
-      Sleek iOS-inspired dark UI. Fast, private, and AdSense-ready.
+      Compress and convert images (JPEG, PNG, WebP) in one click.
     </p>
   </header>
-
   <!-- Top Advertisement Section -->
   <div class="ad-container">
     <ins class="adsbygoogle"
@@ -190,7 +190,6 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
-
   <main>
     <section class="tool-box" tabindex="0">
       <form id="img-tool-form" autocomplete="off">
@@ -212,10 +211,8 @@
         </div>
         <button type="submit" id="convert-btn">Convert & Download</button>
       </form>
-
       <div id="output" class="output-section" style="display:none;"></div>
     </section>
-
     <!-- Middle Advertisement Section -->
     <div class="ad-container">
       <ins class="adsbygoogle"
@@ -229,7 +226,6 @@
       </script>
     </div>
   </main>
-  
   <footer>
     <p style="margin:0;font-size:1.03rem;">© 2025 by YourBrand | Fast, Secure, iOS-Inspired Image Tools</p>
   </footer>
@@ -240,15 +236,12 @@
     qualityInput.addEventListener('input', () => {
       qualityValue.textContent = qualityInput.value;
     });
-
     document.getElementById('img-tool-form').onsubmit = function(e) {
       e.preventDefault();
       let file = document.getElementById('image-upload').files[0];
       let outputFormat = document.getElementById('format-output').value;
       let quality = parseInt(document.getElementById('quality').value, 10) / 100;
-
       if (!file) return alert('Please select an image file.');
-
       let reader = new FileReader();
       reader.onload = evt => {
         let img = new Image();
@@ -258,18 +251,15 @@
           canvas.height = img.height;
           let ctx = canvas.getContext('2d');
           ctx.drawImage(img, 0, 0);
-
           let mime = outputFormat === "jpeg" ? "image/jpeg"
                    : outputFormat === "png" ? "image/png"
                    : "image/webp";
-
           // PNG quality is ignored by canvas.toBlob, but kept for UI consistency.
           let isPng = outputFormat === "png";
           canvas.toBlob(
             function(blob) {
               let url = URL.createObjectURL(blob);
               let ext = outputFormat;
-
               let preview = `<img src="${url}" alt="Result Preview"><br>`;
               let download = `<a href="${url}" download="compressed.${ext}"
                                style="background:var(--accent);color:#fff;padding:0.63em 1.8em;border-radius:16px;display:inline-block;margin-top:0.7em;text-decoration:none;font-weight:650;letter-spacing:0.01em;box-shadow:0 2px 8px #2e72e944;">
