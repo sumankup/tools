@@ -156,11 +156,8 @@
       transition: background .14s;
       display: inline-block;
       margin-top: 0.6rem;
-      /* Ensures non-overlap on mobile */
     }
-    .tool-card:hover .tool-link {
-      background: var(--accent-dark);
-    }
+    .tool-card:hover .tool-link { background: var(--accent-dark);}
     footer {
       background: var(--box-bg);
       min-height: 60px;
@@ -178,11 +175,6 @@
       header, .ad-container, footer {max-width: 99vw; border-radius: 12px;}
       .tools-grid {gap: 1.2rem;}
       .tool-card {min-height:180px;padding:1.1rem .5rem;}
-    }
-    /* Remove link highlight for the whole card */
-    .tool-card:visited, .tool-card:active {
-      color: var(--text-main);
-      text-decoration: none;
     }
   </style>
 </head>
@@ -214,7 +206,7 @@
           <span class="tool-link">Go to Tool</span>
         </div>
       </a>
-      <a class="tool-card" href="pdf-converter.html">
+      <a class="tool-card" href="tools/pdf-converter.html">
         <div class="tool-content">
           <div class="tool-icon">📄</div>
           <div class="tool-title">PDF Converter</div>
@@ -224,47 +216,7 @@
           <span class="tool-link">Go to Tool</span>
         </div>
       </a>
-      <a class="tool-card" href="word-to-pdf.html">
-        <div class="tool-content">
-          <div class="tool-icon">📝</div>
-          <div class="tool-title">Word to PDF Converter</div>
-          <div class="tool-desc">Convert your DOC or DOCX files to PDF with perfect formatting.</div>
-        </div>
-        <div class="tool-link-wrap">
-          <span class="tool-link">Go to Tool</span>
-        </div>
-      </a>
-      <a class="tool-card" href="pdf-merger.html">
-        <div class="tool-content">
-          <div class="tool-icon">🗂️</div>
-          <div class="tool-title">PDF Merger</div>
-          <div class="tool-desc">Merge multiple PDFs into a single document. Easy and ultra-fast.</div>
-        </div>
-        <div class="tool-link-wrap">
-          <span class="tool-link">Go to Tool</span>
-        </div>
-      </a>
-      <a class="tool-card" href="pdf-splitter.html">
-        <div class="tool-content">
-          <div class="tool-icon">✂️</div>
-          <div class="tool-title">PDF Splitter</div>
-          <div class="tool-desc">Split PDFs by pages, ranges, or bookmarks. Simple drag & drop.</div>
-        </div>
-        <div class="tool-link-wrap">
-          <span class="tool-link">Go to Tool</span>
-        </div>
-      </a>
-      <a class="tool-card" href="pdf-compressor.html">
-        <div class="tool-content">
-          <div class="tool-icon">📉</div>
-          <div class="tool-title">PDF Compressor</div>
-          <div class="tool-desc">Reduce PDF file size for faster sharing and uploading.</div>
-        </div>
-        <div class="tool-link-wrap">
-          <span class="tool-link">Go to Tool</span>
-        </div>
-      </a>
-      <!-- Add more tool cards as needed -->
+      <!-- Add more cards as needed -->
     </div>
     <div class="ad-container">
       <ins class="adsbygoogle"
