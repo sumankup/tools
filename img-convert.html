@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Image Converter & Compressor - ProToolkit</title>
@@ -54,6 +53,8 @@
       box-shadow: 0 2px 12px #2e72e944;
       transition: background .15s;
       letter-spacing: .02em;
+      display: inline-block;
+      margin-bottom: 0;
     }
     .home-link:hover { background: var(--accent-dark);}
     header h1 {
@@ -165,12 +166,13 @@
     @media (max-width: 600px) {
       header, .ad-container, .tool-box, footer {max-width: 99vw; border-radius: 12px;}
       .tool-box {padding:1rem .45rem;}
+      .home-link {position: static; margin-bottom: 1em; display:block;}
     }
   </style>
 </head>
 <body>
   <header>
-    <a href="../index.html" class="home-link">&#8592; Home</a>
+    <a href="../index.html" class="home-link">← Home</a>
     <h1>Image Converter & Compressor</h1>
     <p>Convert and compress JPG, PNG, WebP images for free.</p>
   </header>
